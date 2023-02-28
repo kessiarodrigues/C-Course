@@ -1,0 +1,15 @@
+/home/novahaus/MyApp/aula06/bin/Debug/net6.0/aula06
+/home/novahaus/MyApp/aula06/bin/Debug/net6.0/aula06.deps.json
+/home/novahaus/MyApp/aula06/bin/Debug/net6.0/aula06.runtimeconfig.json
+/home/novahaus/MyApp/aula06/bin/Debug/net6.0/aula06.dll
+/home/novahaus/MyApp/aula06/bin/Debug/net6.0/ref/aula06.dll
+/home/novahaus/MyApp/aula06/bin/Debug/net6.0/aula06.pdb
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/aula06.csproj.AssemblyReference.cache
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/aula06.GeneratedMSBuildEditorConfig.editorconfig
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/aula06.AssemblyInfoInputs.cache
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/aula06.AssemblyInfo.cs
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/aula06.csproj.CoreCompileInputs.cache
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/aula06.dll
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/ref/aula06.dll
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/aula06.pdb
+/home/novahaus/MyApp/aula06/obj/Debug/net6.0/aula06.genruntimeconfig.cache
