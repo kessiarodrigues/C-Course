@@ -1,38 +1,47 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace Aula08 {
     class Program {
-        static void Main(String[] args){
+        static void Main(string[] args){
 
-            Console.WriteLine("Entre os dados do produto: ");
+            ContaBancaria conta;
 
-            Console.WriteLine("Nome do produto: ");
-            string nome = Console.ReadLine();
+            Console.Write("Entre o número da conta: ");
+            int numero = int.Parse(Console.ReadLine());
+            Console.Write("Entre o titular da conta: ");
+            string titular = Console.ReadLine();
+            Console.Write("Haverá deposito inicial? (S/N) ");
+            char resp = char.Parse(Console.ReadLine());
+            if (resp == 's' || resp == 'S'){
+                Console.WriteLine("Entre o v alor inicial: ");
+                double depositoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                conta = new ContaBancaria(numero, titular, depositoInicial);
 
-            Console.Write("Preço: ");
-            double preco = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-
-            Produto p = new Produto(nome, preco);
-
-            Console.WriteLine("Dados do Produto: " + p);
-
-            Console.WriteLine();
-            Console.WriteLine("Digite o número de produtos a serem adicionados ao estoque: ");
-            int qte = int.Parse(Console.ReadLine());
-            p.AdicionarProdutos(qte);
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
+            }
+            else {
+                conta = new ContaBancaria(numero, titular);
+            }
 
             Console.WriteLine();
-            Console.WriteLine("Digite o número de produtos a serem removidos ao estoque: ");
-            qte = int.Parse(Console.ReadLine());
-            p.RemoverProdutos(qte);
+            Console.WriteLine("Dados da conta: ");
+            Console.WriteLine(conta);
             Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);
 
+            Console.Write("Entre um valor para deposito: ");
+            double quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            conta.Deposito(quantia);
+
+            Console.WriteLine("Dados da conta atualizados: ");
+            Console.WriteLine(conta);
+
+
+
+            Console.Write("Entre um valor para saque: ");
+            quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            conta.Saque(quantia);
+
+            Console.WriteLine("Dados da conta atualizados: ");
+            Console.WriteLine(conta);
         }
     }
 }
-
